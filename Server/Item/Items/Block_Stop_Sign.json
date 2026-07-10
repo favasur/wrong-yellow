@@ -20,7 +20,7 @@
         "Weight": 1
       }
     ],
-    "BlockSoundSetId": "Stone",
+    "BlockSoundSetId": "Metal",
     "BlockParticleSetId": "Stone",
     "PlacementSettings": {
       "RotationMode": "StairFacingPlayer"
