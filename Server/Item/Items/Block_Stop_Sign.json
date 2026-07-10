@@ -9,7 +9,7 @@
     "Decoration"
   ],
   "BlockType": {
-    "Material": "Solid",
+    "Material": "Plant",
     "DrawType": "Model",
     "Opacity": "Transparent",
     "Group": "Decoration",
@@ -20,6 +20,7 @@
         "Weight": 1
       }
     ],
+    "VariantRotation": "UpDownNESW",
     "BlockSoundSetId": "Metal",
     "BlockParticleSetId": "Stone",
     "PlacementSettings": {

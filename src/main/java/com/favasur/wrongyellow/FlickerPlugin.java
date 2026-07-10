@@ -9,15 +9,13 @@ import java.util.logging.Level;
 /**
  * Wrong Yellow Flicker Plugin
  * <p>
- * Part of the Wrong Yellow mod pack. Adds flickering light effects
- * to the White Build Lightsource block by registering a ticking
- * system that periodically swaps between full, dimmed, and off
- * block variants.
+ * Adds rapid ON↔OFF flickering to the dedicated flickering variant
+ * of the White Build Lightsource block. The vanilla lightsource
+ * block is never touched — it stays statically on.
  * <p>
  * Block variant IDs (defined in Server/Item/Items/):
- * - Block_White_Build_Lightsource       (full brightness, has buzz sound)
- * - Block_White_Build_Lightsource_Dimmed (dim light, no sound)
- * - Block_White_Build_Lightsource_Off    (no light, no sound)
+ * - Block_White_Build_Lightsource_Flickering (ON, has buzz sound)
+ * - Block_White_Build_Lightsource_Off         (OFF, no sound)
  */
 public class FlickerPlugin extends JavaPlugin {
 
@@ -37,9 +35,8 @@ public class FlickerPlugin extends JavaPlugin {
 
         log("WrongYellow FlickerPlugin setup complete.");
         log(String.format(
-                "Flickering enabled for block variants: %s / %s / %s",
-                FlickeringTickingSystem.BLOCK_FULL,
-                FlickeringTickingSystem.BLOCK_DIM,
+                "Flickering ON↔OFF enabled for: %s <-> %s",
+                FlickeringTickingSystem.BLOCK_FLICKER,
                 FlickeringTickingSystem.BLOCK_OFF
         ));
     }

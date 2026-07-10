@@ -9,7 +9,7 @@
     "Decoration"
   ],
   "BlockType": {
-    "Material": "Solid",
+    "Material": "Plant",
     "DrawType": "Model",
     "Opacity": "Transparent",
     "Group": "Decoration",
@@ -20,12 +20,12 @@
         "Weight": 1
       }
     ],
+    "VariantRotation": "UpDownNESW",
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
     "PlacementSettings": {
       "RotationMode": "StairFacingPlayer"
-    },
-    "AmbientSoundEventId": "Voyager_Golden_Record_Greetings"
+    }
   },
   "PlayerAnimationsId": "Block",
   "Tags": {

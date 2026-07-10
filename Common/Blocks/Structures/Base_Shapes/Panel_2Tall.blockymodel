@@ -103,7 +103,7 @@
         },
         "unwrapMode": "custom",
         "visible": true,
-        "doubleSided": true,
+        "doubleSided": false,
         "shadingMode": "standard"
       },
       "children": [ {
@@ -209,7 +209,7 @@
             },
             "unwrapMode": "custom",
             "visible": true,
-            "doubleSided": true,
+            "doubleSided": false,
             "shadingMode": "standard"
           },
           "children": [ {
@@ -315,7 +315,7 @@
                 },
                 "unwrapMode": "custom",
                 "visible": true,
-                "doubleSided": true,
+                "doubleSided": false,
                 "shadingMode": "standard"
               },
               "children": []

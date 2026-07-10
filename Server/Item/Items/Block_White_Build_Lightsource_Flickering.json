@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "items.block_white_build_lightsource_dimmed.name"
+    "Name": "items.block_white_build_lightsource_flickering.name"
   },
   "ItemLevel": 1,
   "MaxStack": 100,
@@ -19,11 +19,12 @@
       }
     ],
     "Light": {
-      "Color": "#FFE066",
-      "Intensity": 5
+      "Color": "#FFFDE8",
+      "Intensity": 15
     },
     "BlockSoundSetId": "Stone",
-    "BlockParticleSetId": "Stone"
+    "BlockParticleSetId": "Stone",
+    "AmbientSoundEventId": "Backrooms_Light_Buzz"
   },
   "PlayerAnimationsId": "Block",
   "Tags": {
