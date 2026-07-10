@@ -11,7 +11,6 @@
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Decoration",
-    "HitboxType": "FullBlock",
     "Textures": [
       {
         "All": "BlockTextures/Block_Caveman_Cutout.png"

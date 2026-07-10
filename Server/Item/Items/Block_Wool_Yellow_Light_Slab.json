@@ -29,7 +29,7 @@
     "Friction": 0.6,
     "Hardness": 0.8,
     "PlacementSettings": {
-      "RotationMode": "SlabFacingPlayer"
+      "RotationMode": "StairFacingPlayer"
     }
   }
 }

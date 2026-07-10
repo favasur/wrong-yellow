@@ -1,7 +1,7 @@
 {
     "Group": "FavaSur",
     "Name": "wrongyellow_flicker",
-    "Version": "1.0.0",
+    "Version": "0.1.0--0.5.6",
     "Description": "Flickering light effects for White Build Lightsource blocks in the Wrong Yellow mod pack.",
     "Authors": [
         {

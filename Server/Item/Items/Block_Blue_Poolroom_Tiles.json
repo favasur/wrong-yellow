@@ -12,7 +12,6 @@
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Stone",
-    "HitboxType": "FullBlock",
     "Textures": [
       {
         "All": "BlockTextures/Block_Blue_Poolroom_Tiles.png"

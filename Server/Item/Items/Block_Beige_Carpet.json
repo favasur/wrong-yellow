@@ -12,7 +12,6 @@
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Organic",
-    "HitboxType": "FullBlock",
     "Textures": [
       {
         "All": "BlockTextures/Block_Beige_Carpet.png"
