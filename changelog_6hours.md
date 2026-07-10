@@ -4,7 +4,7 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `[current]` (tag: `v0.1.12-0.5.6`) — Rename blocks with Cloth_ prefix
+## Latest — `7ffa2c4` (tag: `v0.1.12-0.5.6`) — Rename blocks with Cloth_ prefix
 
 ### Bulk rename: `Block_Wool_Yellow_*` → `Cloth_Block_Wool_Yellow_*`
 - Renamed all 6 wool block JSON files to prefix with `Cloth_`:
