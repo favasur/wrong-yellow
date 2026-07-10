@@ -4,17 +4,25 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `c231933` (tag: `v0.1.12-0.5.6`) — Fix halfblock vertical wall placement
+## Latest — `[current]` (tag: `v0.1.12-0.5.6`) — Rename blocks with Cloth_ prefix
 
-### Halfblock fix
-- **Block_Wool_Yellow_Slab.json** → **Block_Wool_Yellow_Half.json** rename
-- **Block_Wool_Yellow_Light_Slab.json** → **Block_Wool_Yellow_Light_Half.json** rename
-  - Renamed files from `_Slab` to `_Half` for consistency
-  - Updated translation keys (`items.block_wool_yellow_*_slab.*` → `_half.*`) and display names
-  - Added missing `PlacementSettings.RotationMode: "StairFacingPlayer"` to both halfblock files
+### Bulk rename: `Block_Wool_Yellow_*` → `Cloth_Block_Wool_Yellow_*`
+- Renamed all 6 wool block JSON files to prefix with `Cloth_`:
+  - `Block_Wool_Yellow.json` → `Cloth_Block_Wool_Yellow.json`
+  - `Block_Wool_Yellow_Light.json` → `Cloth_Block_Wool_Yellow_Light.json`
+  - `Block_Wool_Yellow_Half.json` → `Cloth_Block_Wool_Yellow_Half.json`
+  - `Block_Wool_Yellow_Light_Half.json` → `Cloth_Block_Wool_Yellow_Light_Half.json`
+  - `Block_Wool_Yellow_Stairs.json` → `Cloth_Block_Wool_Yellow_Stairs.json`
+  - `Block_Wool_Yellow_Light_Stairs.json` → `Cloth_Block_Wool_Yellow_Light_Stairs.json`
+- Updated all internal translation keys (`items.block_wool_yellow_*` → `items.cloth_block_wool_yellow_*`)
+- Updated icon and texture PNG references to `Cloth_Block_Wool_Yellow_*`
+- Renamed all 8 corresponding PNG files (4 BlockTextures + 4 Icons)
+- Updated all language file entries
+
+### Previous: Fix halfblock vertical wall placement
+- Added missing `PlacementSettings.RotationMode: "StairFacingPlayer"` to both halfblock files
   - This was accidentally removed in commit `58875f9` when `VariantRotation` was changed to `UpDownNESW`
   - Without it, halfblocks couldn't be placed vertically against walls
-  - Combined with `VariantRotation: "UpDownNESW"` and `HitboxType: "Block_Half"`, halfblocks now orient correctly on both floors and walls
 
 ---
 

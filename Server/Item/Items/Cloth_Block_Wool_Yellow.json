@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "items.block_wool_yellow.name"
+    "Name": "items.cloth_block_wool_yellow.name"
   },
   "ItemLevel": 1,
   "MaxStack": 100,
@@ -8,14 +8,14 @@
     "Materials",
     "Decoration"
   ],
-  "Icon": "Icons/ItemsGenerated/Block_Wool_Yellow.png",
+  "Icon": "Icons/ItemsGenerated/Cloth_Block_Wool_Yellow.png",
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Organic",
     "Textures": [
       {
-        "All": "BlockTextures/Block_Wool_Yellow.png"
+        "All": "BlockTextures/Cloth_Block_Wool_Yellow.png"
       }
     ],
     "BlockSoundSetId": "Cloth",

@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "items.block_wool_yellow_stairs.name"
+    "Name": "items.cloth_block_wool_yellow_stairs.name"
   },
   "ItemLevel": 1,
   "MaxStack": 100,
@@ -8,7 +8,7 @@
     "Materials",
     "Decoration"
   ],
-  "Icon": "Icons/ItemsGenerated/Block_Wool_Yellow_Stairs.png",
+  "Icon": "Icons/ItemsGenerated/Cloth_Block_Wool_Yellow_Stairs.png",
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
@@ -16,7 +16,7 @@
     "CustomModel": "Blocks/Structures/Stairs/Stairs_SimpleUV.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/Block_Wool_Yellow_Stairs.png",
+        "Texture": "BlockTextures/Cloth_Block_Wool_Yellow_Stairs.png",
         "Weight": 1
       }
     ],

@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "items.block_wool_yellow_half.name"
+    "Name": "items.cloth_block_wool_yellow_light_half.name"
   },
   "ItemLevel": 1,
   "MaxStack": 100,
@@ -8,7 +8,7 @@
     "Materials",
     "Decoration"
   ],
-  "Icon": "Icons/ItemsGenerated/Block_Wool_Yellow.png",
+  "Icon": "Icons/ItemsGenerated/Cloth_Block_Wool_Yellow_Light.png",
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
@@ -17,7 +17,7 @@
     "CustomModel": "Blocks/Structures/Base_Shapes/HalfBlock.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/Block_Wool_Yellow.png",
+        "Texture": "BlockTextures/Cloth_Block_Wool_Yellow_Light.png",
         "Weight": 1
       }
     ],
