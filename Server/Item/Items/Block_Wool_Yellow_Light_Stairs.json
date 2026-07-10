@@ -30,9 +30,6 @@
       "North": [{}]
     },
     "BlockSoundSetId": "Cloth",
-    "Flammable": true,
-    "Friction": 0.6,
-    "Hardness": 0.8,
     "State": {
       "Definitions": {
         "Corner_Right": {

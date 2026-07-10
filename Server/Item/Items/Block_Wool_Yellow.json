@@ -19,10 +19,7 @@
       }
     ],
     "BlockSoundSetId": "Cloth",
-    "BlockParticleSetId": "Dust",
-    "Flammable": true,
-    "Friction": 0.6,
-    "Hardness": 0.8
+    "BlockParticleSetId": "Dust"
   },
   "PlayerAnimationsId": "Block",
   "Tags": {

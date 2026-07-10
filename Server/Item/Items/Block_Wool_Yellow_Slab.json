@@ -25,9 +25,6 @@
     "Flags": {},
     "BlockParticleSetId": "Dust",
     "BlockSoundSetId": "Cloth",
-    "Flammable": true,
-    "Friction": 0.6,
-    "Hardness": 0.8,
     "PlacementSettings": {
       "RotationMode": "StairFacingPlayer"
     }

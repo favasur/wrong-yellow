@@ -24,9 +24,6 @@
     },
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
-    "Flammable": false,
-    "Friction": 0.6,
-    "Hardness": 1.5,
     "AmbientSoundEventId": "Backrooms_Light_Buzz"
   },
   "PlayerAnimationsId": "Block",

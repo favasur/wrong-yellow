@@ -22,11 +22,8 @@
     ],
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
-    "Flammable": false,
-    "Friction": 0.6,
-    "Hardness": 0.5,
     "PlacementSettings": {
-      "RotationMode": "PlayerFacing"
+      "RotationMode": "StairFacingPlayer"
     }
   },
   "PlayerAnimationsId": "Block",
