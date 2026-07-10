@@ -11,23 +11,87 @@
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
-    "Group": "Organic",
-    "HitboxType": "Stairs",
-    "CustomModel": "Blocks/Structures/Stairs/Stairs.blockymodel",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Structures/Stairs/Stairs_SimpleUV.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "BlockTextures/Block_Wool_Yellow_Light_Stairs.png",
         "Weight": 1
       }
     ],
+    "Group": "Organic",
+    "HitboxType": "Stairs",
     "VariantRotation": "UpDownNESW",
+    "Flags": {},
+    "BlockParticleSetId": "Cloth",
+    "Supporting": {
+      "Down": [{}],
+      "North": [{}]
+    },
+    "BlockSoundSetId": "Wool",
+    "Flammable": true,
+    "Friction": 0.6,
+    "Hardness": 0.8,
+    "State": {
+      "Definitions": {
+        "Corner_Right": {
+          "CustomModel": "Blocks/Structures/Stairs/Stairs_Corner_Right_SimpleUV.blockymodel",
+          "HitboxType": "Stairs_Corner_Right",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [{}]
+          }
+        },
+        "Inverted_Corner_Right": {
+          "CustomModel": "Blocks/Structures/Stairs/Stairs_Inverted_Corner_Right_SimpleUV.blockymodel",
+          "HitboxType": "Stairs_Inverted_Corner_Right",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [{}],
+            "North": [{}],
+            "East": [{}]
+          }
+        },
+        "Corner_Left": {
+          "CustomModel": "Blocks/Structures/Stairs/Stairs_Corner_Left_SimpleUV.blockymodel",
+          "HitboxType": "Stairs_Corner_Left",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [{}]
+          }
+        },
+        "Inverted_Corner_Left": {
+          "CustomModel": "Blocks/Structures/Stairs/Stairs_Inverted_Corner_Left_SimpleUV.blockymodel",
+          "HitboxType": "Stairs_Inverted_Corner_Left",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [{}],
+            "North": [{}],
+            "West": [{}]
+          }
+        }
+      }
+    },
     "PlacementSettings": {
       "RotationMode": "StairFacingPlayer"
     },
-    "BlockSoundSetId": "Wool",
-    "BlockParticleSetId": "Cloth",
-    "Flammable": true,
-    "Friction": 0.6,
-    "Hardness": 0.8
+    "ConnectedBlockRuleSet": {
+      "Type": "Stair",
+      "Corner_Left": {
+        "State": "Corner_Left"
+      },
+      "Corner_Right": {
+        "State": "Corner_Right"
+      },
+      "Inverted_Corner_Left": {
+        "State": "Inverted_Corner_Left"
+      },
+      "Inverted_Corner_Right": {
+        "State": "Inverted_Corner_Right"
+      },
+      "Straight": {
+        "State": "default"
+      }
+    }
   }
 }
