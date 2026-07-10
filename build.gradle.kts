@@ -81,6 +81,10 @@ tasks.named<Jar>("jar") {
         )
     }
 
+    // Exclude the Hytale Gradle plugin's asset editor runtime classes (com/azuredoom/)
+    // These are only needed during development, not at runtime.
+    exclude("com/azuredoom/**")
+
     // Bundle asset pack files into the jar so users only need to download
     // a single file. Textures, sounds, block JSONs, sound events, and
     // language files are included at the root of the jar.

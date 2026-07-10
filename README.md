@@ -97,16 +97,25 @@ Just download and drop the jar into your mods folder — **that's it!** All asse
 git clone https://github.com/favasur/wrong-yellow.git
 cd wrong-yellow
 
-# 2. Build the plugin (all assets are bundled automatically)
+# 2. Set up Hytale development environment
+#    (requires Hytale OAuth authentication the first time)
+./gradlew.bat setupHytaleDev
+
+# 3. Build the plugin (all assets are bundled automatically)
 ./gradlew.bat build
 
-# 3. The compiled jar is at:
+# 4. The compiled jar is at:
 #    build/libs/WrongYellow_FlickerPlugin-1.0.0.jar
 ```
 
-**If you have a local Hytale installation**, set `hytaleHomeOverride` in `gradle.properties`:
+**If you have a local Hytale installation**, you can skip `setupHytaleDev` by setting `hytaleHomeOverride` in `gradle.properties`:
 ```properties
 hytaleHomeOverride = C:/path/to/Hytale/Assets.zip
+```
+
+Then just run:
+```bash
+./gradlew.bat build
 ```
 
 ---
