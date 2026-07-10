@@ -4,7 +4,7 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `[current]` (tag: `v0.1.12-0.5.6`) — Fix slab vertical wall placement
+## Latest — `c231933` (tag: `v0.1.12-0.5.6`) — Fix slab vertical wall placement
 
 ### Slab fix
 - **Block_Wool_Yellow_Slab.json**, **Block_Wool_Yellow_Light_Slab.json**
