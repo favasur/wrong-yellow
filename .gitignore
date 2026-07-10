@@ -1,8 +1,6 @@
 # Gradle build outputs
 build/
 .gradle/
-build-test/
-build-test-classes/
 
 # Java class files
 *.class
@@ -18,12 +16,17 @@ build-test-classes/
 .DS_Store
 Thumbs.db
 
-# Temp files
+# Temp / downloaded files
 jdk25.msi
 jdk25.zip
 jdk25_extracted/
 temp/
+build-test/
+build-test-classes/
 
-# Gradle wrapper binary (keep the properties and scripts, ignore the jar)
-# The jar is needed for building, so it stays in git
-nul
+# Stray source assets at project root (not mod textures)
+# Leading / means root-level only — subdirectory assets are still tracked
+/*.png
+/*.ogg
+/*.jpg
+Carpet0034_1_350.jpg

@@ -80,4 +80,15 @@ tasks.named<Jar>("jar") {
             "Main-Class" to project.property("main_class").toString()
         )
     }
+
+    // Bundle asset pack files into the jar so users only need to download
+    // a single file. Textures, sounds, block JSONs, sound events, and
+    // language files are included at the root of the jar.
+    from("pack.json")
+    from("Server") {
+        into("Server")
+    }
+    from("Common") {
+        into("Common")
+    }
 }

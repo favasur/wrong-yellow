@@ -41,7 +41,7 @@ The **Wrong Yellow Flicker Plugin** (`com.favasur.wrongyellow.FlickerPlugin`) ad
 ## 📁 Project Structure
 
 ```
-wrong-yellow-0.5.6/
+wrong-yellow/
 ├── pack.json                  # Hytale asset pack manifest
 ├── build.gradle.kts           # Gradle build (Kotlin DSL)
 ├── settings.gradle.kts        # Gradle settings
@@ -49,12 +49,12 @@ wrong-yellow-0.5.6/
 ├── gradlew / gradlew.bat      # Gradle wrapper
 ├── gradle/wrapper/            # Gradle wrapper files
 │
-├── Server/
+├── Server/                    # ← Bundled INTO the jar at build time
 │   ├── Item/Items/            # Block/item JSON definitions
 │   ├── soundevent/            # Sound event registrations
 │   └── Languages/en-US/       # Translation strings
 │
-├── Common/
+├── Common/                    # ← Bundled INTO the jar at build time
 │   ├── BlockTextures/         # Block texture PNGs
 │   ├── Icons/ItemsGenerated/  # Inventory icon PNGs
 │   └── Sounds/                # OGG sound files
@@ -65,7 +65,9 @@ wrong-yellow-0.5.6/
 │   │   └── FlickeringTickingSystem.java  # Flicker logic (ECS system)
 │   └── resources/manifest.json           # Plugin manifest
 │
-└── Plugins/                   # Deploy target for compiled .jar
+├── Plugins/                   # Deploy target for compiled .jar
+└── build/libs/                # Built jar with ALL assets bundled
+    └── WrongYellow_FlickerPlugin-1.0.0.jar  ← Single file to distribute
 ```
 
 ---
@@ -74,12 +76,13 @@ wrong-yellow-0.5.6/
 
 ### For Players (Using the Mod)
 
-You need **both** the plugin `.jar` AND the asset pack files:
+Just download and drop the jar into your mods folder — **that's it!** All assets (textures, sounds, block definitions) are bundled inside.
 
-1. **Plugin jar:** Copy `build/libs/WrongYellow_FlickerPlugin-1.0.0.jar` to your Hytale server's `Mods/` folder
-2. **Asset pack:** Copy the entire `Server/` and `Common/` directories alongside your `pack.json` to the Hytale mods directory
+1. Download `WrongYellow_FlickerPlugin-1.0.0.jar` from [Releases](https://github.com/favasur/wrong-yellow/releases)
+2. Copy it to your Hytale server's `Mods/` folder
+3. Restart or reload the server
 
-> ⚠️ The jar alone is not enough — the block definitions, textures, sounds, and translations are in the asset pack files.
+> ✅ Single-file install — everything is inside the jar.
 
 ### For Developers (Building from Source)
 
@@ -94,25 +97,16 @@ You need **both** the plugin `.jar` AND the asset pack files:
 git clone https://github.com/favasur/wrong-yellow.git
 cd wrong-yellow
 
-# 2. Set up Hytale development environment
-#    (requires Hytale OAuth authentication)
-./gradlew.bat setupHytaleDev
-
-# 3. Build the plugin
+# 2. Build the plugin (all assets are bundled automatically)
 ./gradlew.bat build
 
-# 4. The compiled jar is at:
+# 3. The compiled jar is at:
 #    build/libs/WrongYellow_FlickerPlugin-1.0.0.jar
 ```
 
 **If you have a local Hytale installation**, set `hytaleHomeOverride` in `gradle.properties`:
 ```properties
 hytaleHomeOverride = C:/path/to/Hytale/Assets.zip
-```
-
-Then just run:
-```bash
-./gradlew.bat build
 ```
 
 ---
