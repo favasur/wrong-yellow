@@ -2,6 +2,7 @@
   "TranslationProperties": {
     "Name": "items.block_stop_sign.name"
   },
+  "Icon": "Icons/ItemsGenerated/Block_Stop_Sign.png",
   "ItemLevel": 1,
   "MaxStack": 100,
   "Categories": [
@@ -9,17 +10,30 @@
   ],
   "BlockType": {
     "Material": "Solid",
-    "DrawType": "Cube",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
     "Group": "Decoration",
-    "Textures": [
+    "CustomModel": "Blocks/Structures/Base_Shapes/Panel_3Tall.blockymodel",
+    "CustomModelTexture": [
       {
-        "All": "BlockTextures/Block_Stop_Sign.png"
+        "Texture": "BlockTextures/Block_Stop_Sign.png",
+        "Weight": 1
       }
     ],
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
     "Flammable": false,
     "Friction": 0.6,
-    "Hardness": 0.5
-  }
+    "Hardness": 0.5,
+    "PlacementSettings": {
+      "RotationMode": "PlayerFacing"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Stone"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Stone"
 }

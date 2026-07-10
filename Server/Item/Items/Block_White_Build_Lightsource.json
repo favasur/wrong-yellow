@@ -8,6 +8,7 @@
     "Materials",
     "Decoration"
   ],
+  "Icon": "Icons/ItemsGenerated/Block_White_Build_Lightsource.png",
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Cube",
@@ -27,5 +28,12 @@
     "Friction": 0.6,
     "Hardness": 1.5,
     "AmbientSoundEventId": "Backrooms_Light_Buzz"
-  }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Stone"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Stone"
 }
