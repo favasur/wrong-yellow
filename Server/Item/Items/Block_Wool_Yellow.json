@@ -1,0 +1,10 @@
+{
+  "BlockType": {
+    "DrawType": "Cube",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Wool_Yellow.png"
+      }
+    ]
+  }
+}
