@@ -16,7 +16,7 @@
     "Group": "Organic",
     "Textures": [
       {
-        "All": "BlockTextures/Block_Wool_Beige.jpg"
+        "All": "BlockTextures/Block_Wool_Beige.png"
       }
     ],
     "BlockSoundSetId": "Cloth",

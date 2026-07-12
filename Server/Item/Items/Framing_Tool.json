@@ -10,7 +10,7 @@
     "Tool"
   ],
   "SubCategory": "Tools",
-  "PlayerAnimationsId": "Tool",
+  "PlayerAnimationsId": "Block",
   "ItemSoundSetId": "ISS_Items_Metal",
   "Quality": "Epic",
   "Gathering": {
