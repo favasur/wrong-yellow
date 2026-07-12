@@ -1,8 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "items.frame_empty_prism.name"
+    "Name": "items.frame_empty_cornertube.name"
   },
-  "Icon": "Icons/ItemsGenerated/Frame_Empty_Prism.png",
+  "Icon": "Icons/ItemsGenerated/Frame_Empty_CornerTube.png",
   "ItemLevel": 1,
   "MaxStack": 100,
   "Categories": ["Materials", "Decoration"],
@@ -11,7 +11,7 @@
     "Group": "Stone", "HitboxType": "Full", "Flags": {},
     "Gathering": { "Breaking": { "GatherType": "Rocks" } },
     "BlockParticleSetId": "Stone",
-    "CustomModel": "Blocks/Frame/Prism.blockymodel",
+    "CustomModel": "Blocks/Frame/CornerTube.blockymodel",
     "CustomModelTexture": [{ "Texture": "BlockTextures/Frame_Grid.png", "Weight": 1 }],
     "BlockSoundSetId": "Stone", "PhysicalMaterialId": "Stone",
     "TextureComputedColor": "#CCCCCC",

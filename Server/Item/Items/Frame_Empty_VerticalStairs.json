@@ -11,7 +11,7 @@
     "Group": "Stone", "HitboxType": "Full", "Flags": {},
     "Gathering": { "Breaking": { "GatherType": "Rocks" } },
     "BlockParticleSetId": "Stone",
-    "CustomModel": "Blocks/Structures/Base_Shapes/VerticalStairs.blockymodel",
+    "CustomModel": "Blocks/Frame/VerticalStairs.blockymodel",
     "CustomModelTexture": [{ "Texture": "BlockTextures/Frame_Grid.png", "Weight": 1 }],
     "BlockSoundSetId": "Stone", "PhysicalMaterialId": "Stone",
     "TextureComputedColor": "#CCCCCC",

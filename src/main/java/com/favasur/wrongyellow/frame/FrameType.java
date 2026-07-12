@@ -38,7 +38,7 @@ public enum FrameType {
     // ── Slabs ─────────────────────────────────────────────────────
 
     SLAB("Frame_Empty_Slab",
-            "Blocks/Structures/Base_Shapes/HalfBlock.blockymodel"),
+            "Blocks/Frame/HalfBlock.blockymodel"),
     DOUBLE_SLAB("Frame_Empty_DoubleSlab",
             null), // two stacked half-blocks (future model)
     ADJUSTABLE_DOUBLE_SLAB("Frame_Empty_AdjDoubleSlab",
@@ -50,16 +50,16 @@ public enum FrameType {
     CENTERED_SLAB("Frame_Empty_CenteredSlab",
             null),
     SLAB_EDGE("Frame_Empty_SlabEdge",
-            "Blocks/Structures/Base_Shapes/SlabEdge.blockymodel"),
+            "Blocks/Frame/SlabEdge.blockymodel"),
     SLAB_CORNER("Frame_Empty_SlabCorner",
             null),
 
     // ── Panels ────────────────────────────────────────────────────
 
     PANEL("Frame_Empty_Panel",
-            "Blocks/Structures/Base_Shapes/Panel_2Tall.blockymodel"),
+            "Blocks/Frame/Panel_2Tall.blockymodel"),
     PANEL_3TALL("Frame_Empty_Panel3Tall",
-            "Blocks/Structures/Base_Shapes/Panel_3Tall.blockymodel"),
+            "Blocks/Frame/Panel_3Tall.blockymodel"),
     DOUBLE_PANEL("Frame_Empty_DoublePanel",
             null),
     ADJUSTABLE_DOUBLE_PANEL("Frame_Empty_AdjDoublePanel",
@@ -76,7 +76,7 @@ public enum FrameType {
     // ── Stairs ────────────────────────────────────────────────────
 
     STAIRS("Frame_Empty_Stairs",
-            "Blocks/Structures/Stairs/Stairs_SimpleUV.blockymodel"),
+            "Blocks/Frame/Stairs_SimpleUV.blockymodel"),
     DOUBLE_STAIRS("Frame_Empty_DoubleStairs",
             null),
     HALF_STAIRS("Frame_Empty_HalfStairs",
@@ -94,7 +94,7 @@ public enum FrameType {
     SLOPED_DOUBLE_STAIRS("Frame_Empty_SlopedDoubleStairs",
             null),
     VERTICAL_STAIRS("Frame_Empty_VerticalStairs",
-            "Blocks/Structures/Base_Shapes/VerticalStairs.blockymodel"),
+            "Blocks/Frame/VerticalStairs.blockymodel"),
     VERTICAL_DOUBLE_STAIRS("Frame_Empty_VerticalDoubleStairs",
             null),
     VERTICAL_HALF_STAIRS("Frame_Empty_VerticalHalfStairs",
@@ -113,22 +113,22 @@ public enum FrameType {
     // ── Corner Stairs ─────────────────────────────────────────────
 
     STAIRS_CORNER_LEFT("Frame_Empty_StairsCornerLeft",
-            "Blocks/Structures/Stairs/Stairs_Corner_Left_SimpleUV.blockymodel"),
+            "Blocks/Frame/Stairs_Corner_Left_SimpleUV.blockymodel"),
     STAIRS_CORNER_RIGHT("Frame_Empty_StairsCornerRight",
-            "Blocks/Structures/Stairs/Stairs_Corner_Right_SimpleUV.blockymodel"),
+            "Blocks/Frame/Stairs_Corner_Right_SimpleUV.blockymodel"),
     STAIRS_INVERTED_CORNER_LEFT("Frame_Empty_StairsInvertedCornerLeft",
-            "Blocks/Structures/Stairs/Stairs_Inverted_Corner_Left_SimpleUV.blockymodel"),
+            "Blocks/Frame/Stairs_Inverted_Corner_Left_SimpleUV.blockymodel"),
     STAIRS_INVERTED_CORNER_RIGHT("Frame_Empty_StairsInvertedCornerRight",
-            "Blocks/Structures/Stairs/Stairs_Inverted_Corner_Right_SimpleUV.blockymodel"),
+            "Blocks/Frame/Stairs_Inverted_Corner_Right_SimpleUV.blockymodel"),
 
     // ── Slopes ────────────────────────────────────────────────────
 
     SLOPE("Frame_Empty_Slope",
-            "Blocks/Structures/Base_Shapes/Slope.blockymodel"),
+            "Blocks/Frame/Slope.blockymodel"),
     SLOPE_STEEP("Frame_Empty_Slope_Steep",
-            "Blocks/Structures/Base_Shapes/Slope_Steep.blockymodel"),
+            "Blocks/Frame/Slope_Steep.blockymodel"),
     SLOPE_SHALLOW("Frame_Empty_Slope_Shallow",
-            "Blocks/Structures/Base_Shapes/Slope_Shallow.blockymodel"),
+            "Blocks/Frame/Slope_Shallow.blockymodel"),
     DOUBLE_SLOPE("Frame_Empty_DoubleSlope",
             null),
     HALF_SLOPE("Frame_Empty_HalfSlope",
@@ -295,9 +295,9 @@ public enum FrameType {
     // ── Pillars ───────────────────────────────────────────────────
 
     PILLAR("Frame_Empty_Pillar",
-            "Blocks/Structures/Base_Shapes/Pillar.blockymodel"),
+            "Blocks/Frame/Pillar.blockymodel"),
     HALF_PILLAR("Frame_Empty_HalfPillar",
-            "Blocks/Structures/Base_Shapes/HalfPillar.blockymodel"),
+            "Blocks/Frame/HalfPillar.blockymodel"),
     CORNER_PILLAR("Frame_Empty_CornerPillar",
             null),
     THREEWAY_CORNER_PILLAR("Frame_Empty_ThreewayCornerPillar",
@@ -325,7 +325,7 @@ public enum FrameType {
     // ── Panes / Boards ────────────────────────────────────────────
 
     PANE("Frame_Empty_Pane",
-            "Blocks/Structures/Base_Shapes/Pane.blockymodel"),
+            "Blocks/Frame/Pane.blockymodel"),
     HORIZONTAL_PANE("Frame_Empty_HorizontalPane",
             null),
     BOARD("Frame_Empty_Board",
@@ -352,7 +352,7 @@ public enum FrameType {
     // ── Prisms ────────────────────────────────────────────────────
 
     PRISM("Frame_Empty_Prism",
-            "Blocks/Structures/Base_Shapes/Prism.blockymodel"),
+            "Blocks/Frame/Prism.blockymodel"),
     SLOPED_PRISM("Frame_Empty_SlopedPrism",
             null),
     ELEVATED_INNER_PRISM("Frame_Empty_ElevatedInnerPrism",
@@ -401,9 +401,9 @@ public enum FrameType {
     LADDER_ALT("Frame_Empty_LadderAlt",
             null),
     TUBE("Frame_Empty_Tube",
-            null),
+            "Blocks/Frame/Tube.blockymodel"),
     CORNER_TUBE("Frame_Empty_CornerTube",
-            null),
+            "Blocks/Frame/CornerTube.blockymodel"),
     PYRAMID("Frame_Empty_Pyramid",
             null),
     PYRAMID_SLAB("Frame_Empty_PyramidSlab",

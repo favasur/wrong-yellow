@@ -22,7 +22,7 @@
       }
     },
     "BlockParticleSetId": "Stone",
-    "CustomModel": "Blocks/Structures/Base_Shapes/Panel_2Tall.blockymodel",
+    "CustomModel": "Blocks/Frame/Panel_2Tall.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "BlockTextures/Frame_Grid.png",

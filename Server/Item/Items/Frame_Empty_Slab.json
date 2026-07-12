@@ -22,7 +22,7 @@
       }
     },
     "BlockParticleSetId": "Stone",
-    "CustomModel": "Blocks/Structures/Base_Shapes/HalfBlock.blockymodel",
+    "CustomModel": "Blocks/Frame/HalfBlock.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "BlockTextures/Frame_Grid.png",

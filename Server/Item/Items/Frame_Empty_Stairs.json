@@ -22,7 +22,7 @@
       }
     },
     "BlockParticleSetId": "Stone",
-    "CustomModel": "Blocks/Structures/Stairs/Stairs_SimpleUV.blockymodel",
+    "CustomModel": "Blocks/Frame/Stairs_SimpleUV.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "BlockTextures/Frame_Grid.png",
