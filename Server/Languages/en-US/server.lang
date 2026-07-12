@@ -41,6 +41,14 @@ items.cloth_block_wool_beige.description = A warm beige wool block. Soft and uns
 items.cloth_block_wool_beige_slope.name = Beige Wool Slope
 items.cloth_block_wool_beige_slope.description = A sloped beige wool block.
 
+# ── Dark Beige Blocks ───────────────────────────────────────────
+items.block_dark_beige.name = Dark Beige
+items.block_dark_beige.description = A darker, more weathered beige. The dampness clings.
+items.block_dark_beige_wet.name = Dark Beige (Wet)
+items.block_dark_beige_wet.description = A wet, dark beige block. It glistens unpleasantly.
+items.block_transition_dark_beige_wet.name = Dark Beige Wet Transition
+items.block_transition_dark_beige_wet.description = A damp transition piece where the wetness seeps into the dry.
+
 # ── FramedBlocks (Empty Frames — Core) ─────────────────────────
 items.frame_empty.name = Frame
 items.frame_empty.description = An empty structural frame. Right-click with camouflage material and a Framing Tool to apply.
@@ -90,6 +98,16 @@ items.frame_empty_stairsinvertedcornerright.description = An empty framed invert
 # ── FramedBlocks (Slopes) ───────────────────────────────────────
 items.frame_empty_slope.name = Frame Slope
 items.frame_empty_slope.description = An empty framed sloped ramp block.
+items.frame_empty_slope_steep.name = Frame Steep Slope
+items.frame_empty_slope_steep.description = An empty framed steep slope block.
+items.frame_empty_slope_shallow.name = Frame Shallow Slope
+items.frame_empty_slope_shallow.description = An empty framed shallow slope block.
+
+# ── Blue Tape ───────────────────────────────────────────────────
+items.item_blue_tape.name = Blue Tape
+items.item_blue_tape.description = A strip of blue tape. Right-click a block to apply a taped transition.
+items.block_blue_taped.name = Blue Taped
+items.block_blue_taped.description = A block sealed with blue tape. The tape hums faintly.
 items.frame_empty_doubleslope.name = Frame Double Slope
 items.frame_empty_doubleslope.description = An empty framed double sloped block.
 items.frame_empty_halfslope.name = Frame Half Slope

@@ -18,7 +18,7 @@
     "CustomModel": "Blocks/Structures/Roofs/Slope.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/Block_Beige_Carpet.png",
+        "Texture": "BlockTextures/Block_Wool_Beige.jpg",
         "Weight": 1
       }
     ],

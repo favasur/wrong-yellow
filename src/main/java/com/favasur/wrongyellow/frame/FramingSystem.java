@@ -16,6 +16,8 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.logging.Level;
 
+import com.favasur.wrongyellow.BlueTapeHandler;
+
 /**
  * Ticking system that manages the full FramedBlocks lifecycle in Hytale.
  * <p>
@@ -171,11 +173,17 @@ public class FramingSystem extends TickingSystem<ChunkStore> {
      * auto-camouflages within ~1 second.
      */
     private void processInteractionQueue(World world) {
-        // 1. Drain the player interaction queue → FrameInteractionHandler
+        // 1. Drain the player interaction queue → handlers
         QueuedInteraction qi;
         while ((qi = interactionQueue.poll()) != null) {
-            FrameInteractionHandler.onPlayerRightClick(
-                    this, qi.packedPosition, qi.heldItemId, qi.clickedBlockId);
+            // Blue Tape: replace block with taped variant
+            if (BlueTapeHandler.BLUE_TAPE_ITEM_ID.equals(qi.heldItemId)) {
+                BlueTapeHandler.onBlueTapeUse(this, qi.packedPosition, qi.clickedBlockId, world);
+            } else {
+                // Frame interaction handler (Framing Tool / camouflage)
+                FrameInteractionHandler.onPlayerRightClick(
+                        this, qi.packedPosition, qi.heldItemId, qi.clickedBlockId);
+            }
         }
 
         // 2. Auto-camouflage: check empty frames for adjacent valid blocks
@@ -473,5 +481,60 @@ public class FramingSystem extends TickingSystem<ChunkStore> {
      */
     public int trackedCount() {
         return camoMap.size();
+    }
+
+    // ---- block replacement API -------------------------------------------
+
+    /**
+     * Replace a block in the world at the given packed position.
+     * <p>
+     * Used by {@link BlueTapeHandler} and other item handlers to swap
+     * the block at a position with a new block ID.
+     * <p>
+     * Currently a stub — needs a live World/BlockAccessor reference to
+     * actually perform the swap.  The interaction queue handler in
+     * {@link #processInteractionQueue} has access to the {@link World}
+     * via the tick store; this method will be fully wired once the
+     * world reference is passed through appropriately.
+     *
+     * @param packedPosition the packed chunk+local position
+     * @param newBlockId     the block ID to set (e.g. "Block_Blue_Taped")
+     * @return {@code true} if the block was successfully replaced
+     */
+    /**
+     * Replace a block in the world at the given packed position.
+     * <p>
+     * Used by {@link BlueTapeHandler} to swap a block with its taped variant.
+     *
+     * @param packedPosition the packed chunk+local position
+     * @param newBlockId     the block ID to set (e.g. "Block_Blue_Taped")
+     * @param world          the {@link World} to modify
+     * @return {@code true} if the block was successfully replaced
+     */
+    public boolean replaceBlock(long packedPosition, String newBlockId, World world) {
+        long chunkIndex = CamoData.unpackChunkIndex(packedPosition);
+        int localPos = CamoData.unpackLocalPos(packedPosition);
+        int lx = localPos & 0xF;
+        int ly = (localPos >> 4) & 0xFF;
+        int lz = (localPos >> 12) & 0xF;
+        int worldX = ((int) (chunkIndex >> 32) << 4) | lx;
+        int worldY = ly;
+        int worldZ = ((int) (chunkIndex & 0xFFFFFFFFL) << 4) | lz;
+
+        BlockAccessor accessor = world.getChunk(chunkIndex);
+        if (accessor == null) {
+            HytaleLogger.getLogger().at(Level.WARNING).log(
+                    "FramingSystem.replaceBlock: chunk not loaded for [" +
+                    worldX + "," + worldY + "," + worldZ + "]");
+            return false;
+        }
+
+        boolean success = accessor.setBlock(worldX, worldY, worldZ, newBlockId);
+        if (success) {
+            HytaleLogger.getLogger().at(Level.INFO).log(
+                    "FramingSystem: replaced block at [" + worldX + "," + worldY + "," + worldZ +
+                    "] with '" + newBlockId + "'");
+        }
+        return success;
     }
 }

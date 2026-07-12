@@ -125,6 +125,10 @@ public enum FrameType {
 
     SLOPE("Frame_Empty_Slope",
             "Blocks/Structures/Base_Shapes/Slope.blockymodel"),
+    SLOPE_STEEP("Frame_Empty_Slope_Steep",
+            "Blocks/Structures/Base_Shapes/Slope_Steep.blockymodel"),
+    SLOPE_SHALLOW("Frame_Empty_Slope_Shallow",
+            "Blocks/Structures/Base_Shapes/Slope_Shallow.blockymodel"),
     DOUBLE_SLOPE("Frame_Empty_DoubleSlope",
             null),
     HALF_SLOPE("Frame_Empty_HalfSlope",
@@ -699,7 +703,7 @@ public enum FrameType {
             return Category.STAIRS;
 
         // ── Slopes (including edges, corners, pyramids, prism corners) ─────
-        if (n.contains("SLOPE") || n.contains("EDGE") || n.contains("PYRAMID")
+        if (n.startsWith("SLOPE_STEEP") || n.startsWith("SLOPE_SHALLOW") || n.contains("SLOPE") || n.contains("EDGE") || n.contains("PYRAMID")
                 || n.contains("CORNER") || n.startsWith("THREEWAY")
                 || n.startsWith("INNER_") || n.startsWith("PRISM_CORNER")
                 || n.startsWith("DOUBLE_CORNER") || n.startsWith("DOUBLE_HALF")

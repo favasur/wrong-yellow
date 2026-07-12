@@ -1,0 +1,28 @@
+{
+  "TranslationProperties": {
+    "Name": "items.item_blue_tape.name",
+    "Description": "items.item_blue_tape.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Item_Blue_Tape.png",
+  "ItemLevel": 1,
+  "MaxStack": 64,
+  "Categories": [
+    "Tool"
+  ],
+  "SubCategory": "Tools",
+  "PlayerAnimationsId": "Tool",
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "Quality": "Common",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

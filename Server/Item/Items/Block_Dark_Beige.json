@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "items.cloth_block_wool_beige.name",
-    "Description": "items.cloth_block_wool_beige.description"
+    "Name": "items.block_dark_beige.name",
+    "Description": "items.block_dark_beige.description"
   },
   "ItemLevel": 1,
   "MaxStack": 100,
@@ -9,14 +9,14 @@
     "Materials",
     "Decoration"
   ],
-  "Icon": "Icons/ItemsGenerated/Cloth_Block_Wool_Beige.png",
+  "Icon": "Icons/ItemsGenerated/Block_Dark_Beige.png",
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Organic",
     "Textures": [
       {
-        "All": "BlockTextures/Block_Wool_Beige.jpg"
+        "All": "BlockTextures/Block_Dark_Beige_Carpet.png"
       }
     ],
     "BlockSoundSetId": "Cloth",
