@@ -40,7 +40,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "bottom": {
                 "offset": {
@@ -51,7 +51,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -148,7 +148,7 @@
                   "x": true,
                   "y": false
                 },
-                "angle": 180
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -181,7 +181,7 @@
                   "x": false,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -192,7 +192,7 @@
                   "x": true,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",
@@ -256,7 +256,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 180
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -289,7 +289,7 @@
                   "x": false,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -300,7 +300,7 @@
                   "x": true,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",
@@ -397,7 +397,7 @@
                   "x": false,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -408,7 +408,7 @@
                   "x": true,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",
@@ -461,7 +461,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "bottom": {
                 "offset": {
@@ -472,7 +472,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 270
+                "angle": 0
               },
               "back": {
                 "offset": {
@@ -483,7 +483,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "left": {
                 "offset": {
@@ -494,7 +494,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -505,7 +505,7 @@
                   "x": true,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",
@@ -558,7 +558,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "bottom": {
                 "offset": {
@@ -569,7 +569,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "back": {
                 "offset": {
@@ -580,7 +580,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "left": {
                 "offset": {
@@ -591,7 +591,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -602,7 +602,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",
@@ -655,7 +655,7 @@
                   "x": true,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "back": {
                 "offset": {
@@ -741,7 +741,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "bottom": {
                 "offset": {
@@ -752,7 +752,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -849,7 +849,7 @@
                   "x": true,
                   "y": false
                 },
-                "angle": 180
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -882,7 +882,7 @@
                   "x": false,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -893,7 +893,7 @@
                   "x": true,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",
@@ -957,7 +957,7 @@
                   "x": true,
                   "y": false
                 },
-                "angle": 180
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -990,7 +990,7 @@
                   "x": false,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               },
               "right": {
                 "offset": {
@@ -1001,7 +1001,7 @@
                   "x": true,
                   "y": true
                 },
-                "angle": 90
+                "angle": 0
               }
             },
             "type": "box",

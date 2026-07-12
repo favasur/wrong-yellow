@@ -40,7 +40,7 @@
                   "x": false,
                   "y": false
                 },
-                "angle": 90
+                "angle": 0
               },
               "front": {
                 "offset": {
@@ -134,7 +134,7 @@
               "x": false,
               "y": false
             },
-            "angle": 180
+            "angle": 0
           },
           "bottom": {
             "offset": {

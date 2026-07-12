@@ -10,7 +10,7 @@
       "stretch": { "x": 1, "y": 1, "z": 1 },
       "textureLayout": {
         "top": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 },
-        "bottom": { "offset": { "x": 0, "y": 8 }, "mirror": { "x": false, "y": false }, "angle": 0 },
+        "bottom": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 },
         "front": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 },
         "back": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 },
         "left": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 },
